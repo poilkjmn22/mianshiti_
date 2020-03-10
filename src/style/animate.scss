@@ -1,0 +1,4 @@
+@import "./util.scss";
+@mixin fade($property: visibility, $duration: 600ms, $time-func: lineaar){
+  @include polyfill(transition, $property $duration);
+}

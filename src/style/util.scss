@@ -1,0 +1,7 @@
+$browser-prefix: webkit,o,ms,moz;
+@mixin polyfill($property, $value){
+  @each $prefix in $browser-prefix{
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}

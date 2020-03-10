@@ -1,0 +1,41 @@
+@import "../../style/shape.scss";
+@import "../../style/animate.scss";
+.my-tooltip{
+  z-index: 999;
+  padding: 6px;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  border: 1px solid black;
+  visibility: hidden;
+  @include fade(visibility, 400ms, ease);
+  &.is-show-tip{
+    visibility: visible;
+  }
+
+  @include css-triangle();
+}
+
+.my-tooltip.tooltip-red{
+  background: red;
+  border-color: red;
+  &:after{
+    border-top-color: red;
+  }
+}
+
+.my-tooltip.tooltip-blue{
+  background: blue;
+  border-color: blue;
+  &:after{
+    border-top-color: blue;
+  }
+}
+
+.my-tooltip.tooltip-yellow{
+  background: yellow;
+  border-color: yellow;
+  &:after{
+    border-top-color: yellow;
+  }
+}

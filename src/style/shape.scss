@@ -1,0 +1,14 @@
+@mixin css-triangle($size: 10px, $color: black){
+    position: relative;
+    &:after{
+      content: " ";
+      position: absolute;
+      left: 50%;
+      margin-left: -$size;
+      bottom: -$size * 2;
+      width: 0;
+      height: 0;
+      border: $size solid transparent;
+      border-top-color: $color;
+    }
+}
