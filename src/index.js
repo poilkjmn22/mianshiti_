@@ -1,4 +1,5 @@
 import Tooltip from './components/tooltip';
+import {translateNum} from './problems/translateNum';
 
 document.addEventListener('DOMContentLoaded', e => {
   let tip = new Tooltip(document.querySelector('#test-tooltip'));
@@ -15,3 +16,5 @@ document.addEventListener('DOMContentLoaded', e => {
     customTipClassName: 'tooltip-blue'
   });
 })
+
+console.log(translateNum(55))
