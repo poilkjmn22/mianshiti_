@@ -17,4 +17,6 @@ document.addEventListener('DOMContentLoaded', e => {
   });
 })
 
-console.log(translateNum(55))
+console.log(translateNum(34))
+console.log(translateNum(99));
+console.log(translateNum(88));

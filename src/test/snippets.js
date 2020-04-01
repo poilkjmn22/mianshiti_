@@ -7,7 +7,7 @@ for (var i = 0; i < array.length; i++) {
 while (true) {
 
 }
-
+import { interface } from 'module';
 methodName: function (attribute) {
 
 },
